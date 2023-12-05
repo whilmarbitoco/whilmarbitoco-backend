@@ -26,6 +26,7 @@ class ProjectController extends Controller
             'image' => 'required',
             'languages' => 'required'
         ]);
+        
         return Project::create($request->all());
     }
 
